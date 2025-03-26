@@ -87,9 +87,11 @@ curl -X POST "http://localhost:8080/api/emails/send" \
 
 ## Testing
 You can run tests using Maven. To execute all test cases, use the following command:
+
 ```
 mvn test
 ```
+
 The current test cases are general input validations including the fail over mechanism for the email sending.
 
 Currently my MailGun and SendGrid playtest accounts are not working so only mailersend API is being tested for successful email sending.
@@ -97,7 +99,10 @@ Currently my MailGun and SendGrid playtest accounts are not working so only mail
 ## Logging
 The application uses SLF4J for logging. You can configure logging levels in the application.properties file. 
 For example, to set the logging level for the com.siteminder.email package:
+
+```
 logging.level.com.siteminder.email=DEBUG
+```
 
 ## TODO
 - Setup MailGun and SendGrid configurations or look for other alternatives API like MailerSend.
