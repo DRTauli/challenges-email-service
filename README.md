@@ -85,6 +85,11 @@ curl -X POST "http://localhost:8080/api/emails/send" \
 -d "bcc=bcc@example.com"
 ```
 
+Replace the host server with your own or you can test it with "https://challenges-email-service.onrender.com/api/emails/send"
+
+The application is currently deployed on Render with Free Tier for testing purposes so a standby time limit is applied after it has been inactive for a while.
+
+
 ## Testing
 You can run tests using Maven. To execute all test cases, use the following command:
 
