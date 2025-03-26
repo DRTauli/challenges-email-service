@@ -20,7 +20,7 @@
     <description>Siteminder Email-service challenge</description>
     <url>https://github.com/DRTauli/challenges-email-service</url>
     <properties>
-        <java.version>23</java.version>
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>
