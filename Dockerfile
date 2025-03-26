@@ -12,7 +12,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Stage 2: Create a minimal runtime environment
-FROM openjdk:17-jre
+FROM openjdk:17-slim
 
 # Set the working directory
 WORKDIR /app
