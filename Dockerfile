@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM maven:3.8.5-openjdk-23 AS builder
+FROM maven:3.8.5-openjdk-17 AS builder
 
 # Set the working directory
 WORKDIR /app
@@ -12,7 +12,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Stage 2: Create a minimal runtime environment
-FROM openjdk:23-jre-slim
+FROM openjdk:17-jre-slim
 
 # Set the working directory
 WORKDIR /app
